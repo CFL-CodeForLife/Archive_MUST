@@ -1,0 +1,42 @@
+{
+    "links":[
+
+        {
+            "name":"Courses Group links",
+            "url":{
+                "type":"full",
+                "link":"../groups/"
+            },          
+            "img":null,
+            "description":"Links for whatsapp and facebook"
+        },
+        {
+            "name":"Google Drive",
+            "url":{
+                "type":"full",
+                "link":"https://drive.google.com/drive/u/1/folders/1_WJMgeoAa3LyWMKMQHzwjDXE0nmCmRvP"
+            }, 
+            "img":"https://play-lh.googleusercontent.com/t-juVwXA8lDAk8uQ2L6d6K83jpgQoqmK1icB_l9yvhIAQ2QT_1XbRwg5IpY08906qEw",
+            "description":"This Google Drive was created by fishing acadmy"
+        },
+        {
+            "name":"One Drive",
+            "url":{
+                "type":"local",
+                "link":""
+            },          
+            "img":"data:image/png;base64,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",
+            "description":null
+        },
+        {
+            "hidden":true,
+            "name":null,
+            "url":{
+                "type":"local",
+                "link":"#"
+            },          
+            "img":"",
+            "description":null
+        }
+    ]
+}
