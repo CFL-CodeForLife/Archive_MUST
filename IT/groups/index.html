@@ -94,7 +94,9 @@
 
             
             res.links.forEach(e => {
-                var one_course = '';
+				if(e.hidden===true)return;
+                
+				var one_course = '';
                 e.url.forEach(ee=>{
                     if(ee.url==undefined || ee.url==null || ee.url=='')return;
                     one_course+=`<div class="one-link hero-btn gray-btn"><a href="${ee.url}" target="_blank"><i class="fa fa-${ee.platform}"></i>${ee.platform} ${(!_isEmpty(ee.note))?'':'('+ee.note+')'}</a> </div>`;
