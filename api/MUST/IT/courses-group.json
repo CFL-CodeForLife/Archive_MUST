@@ -9,6 +9,8 @@
         { "code": "ENG102", "hidden":true, "url": [ {"platform": "whatsapp", "name": "" , "url": ""}, {"platform": "facebook", "name": "" , "url": ""} ] },
         { "code": "ENG201", "url": [ {"platform": "whatsapp", "name": "" , "url": "https://chat.whatsapp.com/BsnLttlHDVUDW3EFFAU7BR"}, {"platform": "facebook", "name": "" , "url": ""} ] },
 
+        { "code": "PHY101", "url": [ {"platform": "whatsapp", "name": "" , "url": "https://chat.whatsapp.com/JLTYew6i6knBk3s98D0O8w"}, {"platform": "facebook", "name": "" , "url": ""} ] },
+
         { "code": "ECE202", "url": [ {"platform": "whatsapp", "name": "" , "url": "https://chat.whatsapp.com/C518Z0QPWL2LuEkcVnCAg5"}, {"platform": "facebook", "name": "" , "url": ""} ] },
         { "code": "ECE210", "url": [ {"platform": "whatsapp", "name": "" , "url": "https://chat.whatsapp.com/CttG0TzF8FL4nZZF56WmPv"}, {"platform": "facebook", "name": "" , "url": ""} ] },
 
