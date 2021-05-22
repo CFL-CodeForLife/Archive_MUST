@@ -14,7 +14,7 @@
 
         { "code": "MATH101", "url": [ {"platform": "whatsapp", "name": "" , "url": ""}, {"platform": "facebook", "name": "" , "url": ""} ]  },
         { "code": "MATH102", "url": [ {"platform": "whatsapp", "name": "" , "url": "https://chat.whatsapp.com/Khmek6f7ydHGKvVK0gO8Ty"}, {"platform": "facebook", "name": "" , "url": ""} ] },
-        { "code": "MATH251", "url": [ {"platform": "whatsapp", "name": "" , "url": "https://chat.whatsapp.com/IMj1LLE7yN0Kwi0VYzwC0l"}, {"platform": "whatsapp", "name": "#2" , "url": "https://chat.whatsapp.com/DegrhEPyFhiH1Zc0VhjJZ6"}, {"platform": "facebook", "name": "" , "url": ""} ] },
+        { "code": "MATH251", "url": [ {"platform": "whatsapp", "name": "" , "url": "https://chat.whatsapp.com/IMj1LLE7yN0Kwi0VYzwC0l"}, {"platform": "whatsapp", "name": "", "note":"#2", "url": "https://chat.whatsapp.com/DegrhEPyFhiH1Zc0VhjJZ6"}, {"platform": "facebook", "name": "" , "url": ""} ] },
         { "code": "MATH241", "url": [ {"platform": "whatsapp", "name": "" , "url": ""}, {"platform": "facebook", "name": "" , "url": ""} ] },
         { "code": "MATH301", "url": [ {"platform": "whatsapp", "name": "" , "url": "https://chat.whatsapp.com/FvEBVNH5dPOBOi1VhcH1dp"}, {"platform": "facebook", "name": "" , "url": "https://www.facebook.com/groups/163120002405247"} ] },
 
