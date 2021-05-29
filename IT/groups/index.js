@@ -1,11 +1,8 @@
-function showMenu() {document.getElementById("navLinks").style.right = "0";}
-function hideMenu() { document.getElementById("navLinks").style.right = "-200px"; }
 function _isEmpty(e) { return !(e == undefined || e == null || e == ""); }
 
 (async () => { // add data
     const res = await (await fetch(`${window.location.protocol}//${window.location.host}/MUST/api/MUST/IT/courses-group.json`)).json();
     // console.log(res);
-
     res.links.forEach((e) => {
         if (e.hidden === true) return;
 
