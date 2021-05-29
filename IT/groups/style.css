@@ -5,7 +5,6 @@
   --color1: #1a1a2e;
   --color2: #16213e;
   --color3: #2873cf;
-  --color4: #e94560;
 }
 
 * {
@@ -61,12 +60,12 @@ p {
 /* header section */
 nav {
   display: flex;
-  padding: 2% 6%;
+  padding: 1% 4%;
   justify-content: space-between;
   align-items: center;
 }
 nav img {
-  width: 150px;
+  width: 43px;
 }
 .nav-links {
   flex: 1;
@@ -180,11 +179,6 @@ nav .fa {
   margin-bottom: 15px;
   text-align: left;
 }
-/* university section */
-
-/* testimonials section  */
-
-/* cta */
 
 /* footer */
 .footer {
@@ -198,15 +192,20 @@ nav .fa {
   font-weight: 600;
 }
 .footer .icons .fa {
-  color: var(--color4);
+  color: #e94560;
   margin: 0 13px;
   cursor: pointer;
   padding: 18px 0;
 }
 .fa-heart-o {
-  color: var(--color4);
+  color: #e94560;
 }
-
+.footer .container
+{
+  display: flex; 
+  align-items: center;
+  justify-content:center;
+}
 .min-header {
   width: 100%;
   background-position: center;
@@ -218,7 +217,6 @@ nav .fa {
   margin-top: 20px;
 }
 
-/*  */
 .about-us {
   width: 80%;
   margin: auto;
@@ -328,9 +326,9 @@ nav .fa {
     font-size: 24px;
   }
 }
-#cfl-logo {
+.cfl-logo {
     border-radius: 50%;
-    min-width: 17vw;
-    max-width: 17vw;
+    /* min-width: 17vw; */
+    /* max-width: 17vw; */
     /* max-width: 100px; */
 }
