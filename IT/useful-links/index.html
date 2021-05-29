@@ -99,12 +99,12 @@
         return !(e == undefined || e == null || e == "");
       }
       (async () => {
-        var res = await (
-          await fetch(
-            `${window.location.protocol}//${window.location.host}/MUST/api/MUST/IT/links.json`
-          )
-        ).json();
-        // var res = await(await fetch(`/api/MUST/IT/links.json`)).json();
+        // var res = await (
+        //   await fetch(
+        //     `${window.location.protocol}//${window.location.host}/MUST/api/MUST/IT/links.json`
+        //   )
+        // ).json();
+        var res = await(await fetch(`/api/MUST/IT/links.json`)).json();
         console.log(res);
         res.links.forEach((e) => {
           if (e.hidden) return;
