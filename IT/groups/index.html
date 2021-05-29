@@ -8,28 +8,11 @@
     <title>MUST Course Resources</title>
   </head>
   <body>
-    <section class="min-header">
-      <nav>
-        <a href="index.html"><img src="../../image/logo.png" alt="" /></a>
-        <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
-          <i class="fad fa-skull fa-rotate-90"></i>
+	  <header></header>
 
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#footer">About Us</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="https://www.must.edu.eg/">University</a></li>
-            <li><a href="../useful-links/index.html">Useful Links</a></li>
-          </ul>
-        </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-      </nav>
-      <!-- <h1>Our Courses</h1> -->
-    </section>
 
     <section class="my-section courses">
-      <h1>Course Groups' Links</h1>
+      <h1>Course Groups Links</h1>
       <p>
         Courses & community groups for Misr University for Science and
         Technology.
@@ -62,28 +45,14 @@
         </div>
 
     </section> -->
+	<footer>
 
-    <section class="footer" id="footer">
-		<h3>About Us</h3>
-		<div class="container">
-			<div ><img src="../../image/cfl-logo.png" class="cfl-logo" /></div>
-			<div >
-				<p>We're a group of students from the the university who were sick of being confused as to where we 
-					can find our courses' materials so we decided to gather them and articulate them in a small website, enjoy!</p>
-			</div>
-		</div>
-		<div class="icons">
-			<i class="fa fa-facebook"></i>
-			<i class="fa fa-twitter"></i>
-			<i class="fa fa-instagram"></i>
-			<i class="fa fa-twitter"></i>
-		</div>
-    	<p>Made with <i class="fa fa-heart-o"></i> by Ahmed Kira</p>
-    </section>
-
-    <script>
-
-    </script>
+	</footer>
     <script src="index.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+		$('footer').load('../../include/footer.html');
+		$('header').load('../../include/header.html');
+    </script>
   </body>
 </html>
