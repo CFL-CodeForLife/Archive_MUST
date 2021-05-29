@@ -205,6 +205,10 @@ nav .fa {
   display: flex; 
   align-items: center;
   justify-content:center;
+  padding: 0 20px;
+}
+.footer .container p{
+  text-align: justify;
 }
 .min-header {
   width: 100%;
@@ -259,7 +263,9 @@ nav .fa {
   line-height: 22px;
   padding: 10px;
 }
-
+.cfl-logo {
+  border-radius: 50%;
+}
 @media (max-width: 1200px) {
   .container-3 {
     grid-template-columns: 1fr 1fr;
@@ -270,19 +276,24 @@ nav .fa {
 }
 
 @media (max-width: 750px) {
+  p{
+    font-size: 13px;
+  }
+  h1{
+    font-size: 28px;
+  }
   .row {
     flex-direction: column;
   }
-  .container-2,
-  .container-3 {
+  .container-2,  .container-3 {
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
   }
-  .container-2
+  /* .container-2 */
     /* header section */
-    .text-box h1 {
+  .text-box h1 {
     font-size: 24px;
   }
   .nav-links ul li {
@@ -309,6 +320,7 @@ nav .fa {
   .nav-links ul {
     padding: 30px;
   }
+
   /* testimonials section */
   .testimonials-col img {
     margin-left: 0px;
@@ -326,9 +338,4 @@ nav .fa {
     font-size: 24px;
   }
 }
-.cfl-logo {
-    border-radius: 50%;
-    /* min-width: 17vw; */
-    /* max-width: 17vw; */
-    /* max-width: 100px; */
-}
+
