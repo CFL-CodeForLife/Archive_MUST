@@ -38,7 +38,7 @@
 		checkTheme();
 
 		function checkTheme(){
-			const currentThemeColor = localStorage.getItem('theme-color');
+			const currentThemeColor = localStorage.getItem('theme-color') || 'theme-black';
 			if(currentThemeColor !== null){
 				document.querySelector('body').classList.add(currentThemeColor);
 				document.querySelector(`#${currentThemeColor}`).classList.add('active');
