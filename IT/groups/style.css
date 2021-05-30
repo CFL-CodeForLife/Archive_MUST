@@ -18,12 +18,12 @@
 } */
 body.theme-lightmode{
   --background: #fff;
-  --cards: #636363;
+  --cards: #444;
   --text: #000;
 }
 body.theme-darkmode{
   --background: #000;
-  --cards: #636363;
+  --cards: #cee;
   --text: #fff;
 }
 * {
@@ -93,7 +93,7 @@ p {
 }
 .hero-btn:hover {
   border: 1px solid var(--cards);
-  background: #fff;
+  background: var(--background);
   transition: 0.3s;
 }
 .hero-btn .fa {
