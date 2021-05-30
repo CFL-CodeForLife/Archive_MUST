@@ -11,7 +11,49 @@
   </head>
   <body>
 	  <header></header>
-
+    <style>
+      .theme-options{ 
+        padding: 20px 0;
+        width: 20px; 
+        max-height: 150px;
+        position: sticky; 
+        top: 0;
+        z-index: 5;
+      }
+      .theme-options div { width: 20px; height: 20px; }
+      #theme-orange{ background-color: orange; }
+      #theme-black{ background-color: black; }
+      #theme-white{ background-color: white; }
+      #theme-blue{ background-color: blue; }
+      #theme-yellow{ background-color: yellow; }
+    </style>
+    <div class="theme-options">
+      <div id="theme-orange" onclick="switchColorTheme(this.id)"></div>
+      <div id="theme-black" onclick="switchColorTheme(this.id)"></div>
+      <div id="theme-white" onclick="switchColorTheme(this.id)"></div>
+      <div id="theme-blue" onclick="switchColorTheme(this.id)"></div>
+      <div id="theme-yellow" onclick="switchColorTheme(this.id)"></div>
+    </div>
+    <script>
+      checkTheme();
+  
+      function checkTheme(){
+        const currentThemeColor = localStorage.getItem('theme-color');
+        if(currentThemeColor !== null){
+          document.querySelector('body').classList.add(currentThemeColor);
+          document.querySelector(`#${currentThemeColor}`).classList.add('active');
+        }
+      }
+  
+      function switchColorTheme(theme){
+        [...document.querySelectorAll('.theme-options div')].map((e)=>{e.classList.remove('active');});
+        document.querySelector(`#${theme}`).classList.add('active');
+        document.querySelector('body').classList.remove((document.querySelector('body').className.match(/\btheme-\S+/g) || []).join(' '));
+        document.querySelector('body').classList.add(theme);
+        localStorage.setItem('theme-color',theme);
+      }
+    </script>
+      
 
     <section class="my-section courses">
       <h1>Course Groups Links</h1>

@@ -2,33 +2,51 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 :root {
-  --color1: #1a1a2e;
-  --color2: #16213e;
-  --color3: #2873cf;
-  --color4: #e94560;
+  --background: #1a1a2e;
+  --cards: #16213e;
+  --text: #2873cf;
 }
-
+body.theme-yellow{
+  --background: #f1ff26;
+  --cards: #da0000;
+  --text: #05b905;
+}
+body.theme-orange{
+  --background: #31220b;
+  --cards: #f0860e;
+  --text: #f7f7f7;
+}
+body.theme-white{
+  --background: #ddd;
+  --cards: #636363;
+  --text: #000;
+}
+body.theme-black{
+  --background: #000;
+  --cards: #636363;
+  --text: #ddd;
+}
 * {
   margin: 0;
   padding: 0;
   font-family: "Antonio", sans-serif;
 }
 body {
-  background-color: var(--color1);
+  background-color: var(--background);
 }
 h1 {
-  color: #fff;
+  color: var(--text);
   font-size: 40px;
   font-weight: 600;
 }
 h3 {
-  color: #fff;
+  color: var(--text);
   text-align: center;
   font-weight: 600;
   margin: 10px 0;
 }
 p {
-  color: var(--color3);
+  color: var(--text);
   font-size: 16px;
   font-weight: 600;
   line-height: 22px;
@@ -124,7 +142,7 @@ a {
   padding-top: 120px;
 }
 .other-col {
-  background: var(--color2);
+  background: var(--cards);
   /* flex-basis: 32%; */
   border-radius: 10px;
   margin-bottom: 5%;
@@ -156,7 +174,7 @@ a {
   /* display: inline; */
   padding: 0;
   display: flex;
-  background: var(--color2);
+  background: var(--cards);
   /* flex-basis: 32%; */
   border-radius: 10px;
   margin-bottom: 10px;
