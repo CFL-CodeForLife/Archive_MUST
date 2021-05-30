@@ -11,84 +11,12 @@
   </head>
   <body>
 	  <header></header>
-    <style>
-      .theme-options{ 
-        padding: 20px 0;
-        width: 20px; 
-        max-height: 150px;
-        position: sticky; 
-        top: 0;
-        z-index: 5;
-      }
-      .theme-options div { width: 20px; height: 20px; }
-      #theme-orange{ background-color: orange; }
-      #theme-black{ background-color: black; }
-      #theme-white{ background-color: white; }
-      #theme-blue{ background-color: blue; }
-      #theme-yellow{ background-color: yellow; }
-    </style>
-    <div class="theme-options">
-      <div id="theme-orange" onclick="switchColorTheme(this.id)"></div>
-      <div id="theme-black" onclick="switchColorTheme(this.id)"></div>
-      <div id="theme-white" onclick="switchColorTheme(this.id)"></div>
-      <div id="theme-blue" onclick="switchColorTheme(this.id)"></div>
-      <div id="theme-yellow" onclick="switchColorTheme(this.id)"></div>
-    </div>
-    <script>
-      checkTheme();
-  
-      function checkTheme(){
-        const currentThemeColor = localStorage.getItem('theme-color') || 'theme-black';
-        if(currentThemeColor !== null){
-          document.querySelector('body').classList.add(currentThemeColor);
-          document.querySelector(`#${currentThemeColor}`).classList.add('active');
-        }
-      }
-  
-      function switchColorTheme(theme){
-        [...document.querySelectorAll('.theme-options div')].map((e)=>{e.classList.remove('active');});
-        document.querySelector(`#${theme}`).classList.add('active');
-        document.querySelector('body').classList.remove((document.querySelector('body').className.match(/\btheme-\S+/g) || []).join(' '));
-        document.querySelector('body').classList.add(theme);
-        localStorage.setItem('theme-color',theme);
-      }
-    </script>
-      
 
     <section class="my-section courses">
       <h1>Course Groups Links</h1>
-      <p>
-        Courses & community groups for Misr University for Science and
-        Technology.
-      </p>
+      <p> Courses & community groups for Misr University for Science and Technology. </p>
       <div class="container-3" id="group-container"></div>
     </section>
-
-    <!-- <section class="my-section other">
-        <h1>welcome to University</h1>
-        <h1>Other Useful Links</h1>
-        <p>  Far far away, behind the word mountains, far from the countries countries Vokalia and Consonantia, there live the blind texts there live the blind texts. 
-            A small river named Duden flows by their place and supplies it with the necessary regelialia.
-        </p>
-        <div class="row " id="general-container">
-            <div class="other-col">
-                <img src="/image/library.png" alt="">
-                <h3>brrrrr</h3> 
-                <p> Far far away, behind the word mountains, far from the countries countries </p>  
-            </div>
-            <div class="other-col">
-                <img src="/image/basketball.png" alt="">
-                <h3>brrrrr</h3> 
-                <p> Far far away, behind the word mountains, far from the countries countries </p>  
-            </div>
-            <div class="other-col">
-                <img src="/image/cafeteria.png" alt="">
-                <h3>brrrrr</h3> 
-                <p> Far far away, behind the word mountains, far from the countries countries </p>  
-            </div>
-        </div>
-
-    </section> -->
 	<footer></footer>
     <script src="index.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

@@ -11,30 +11,56 @@
 	</head>
 	<body>
 	<header></header>
-	<style>
-		.theme-options{ 
-			padding: 20px 0;
-			width: 20px; 
-			max-height: 150px;
-			position: sticky; 
-			top: 0;
-			z-index: 5;
-		}
-		.theme-options div { width: 20px; height: 20px; }
-		#theme-orange{ background-color: orange; }
-		#theme-black{ background-color: black; }
-		#theme-white{ background-color: white; }
-		#theme-blue{ background-color: blue; }
-		#theme-yellow{ background-color: yellow; }
-	</style>
-	<div class="theme-options">
-		<div id="theme-orange" onclick="switchColorTheme(this.id)"></div>
-		<div id="theme-black" onclick="switchColorTheme(this.id)"></div>
-		<div id="theme-white" onclick="switchColorTheme(this.id)"></div>
-		<div id="theme-blue" onclick="switchColorTheme(this.id)"></div>
-		<div id="theme-yellow" onclick="switchColorTheme(this.id)"></div>
+
+	<div class="theme-maneger">
+		<style>
+			.theme-maneger{
+				display: flex;
+				max-width: 50px;
+				position: relative;
+				height: 120px;
+			}
+			.theme-maneger .open{
+				display: inline-block;
+				cursor: pointer;
+				min-width: 10px;
+				background-color: blueviolet;
+				height: 100%;
+
+			}
+			.theme-options{ 
+				padding: 20px 0;
+				width: 20px; 
+				
+				position: sticky; 
+				top: 0;
+				z-index: 5;
+			}
+			.theme-options div { width: 20px; height: 20px; }
+			#theme-orange{ background-color: orange; }
+			#theme-black{ background-color: black; }
+			#theme-white{ background-color: white; }
+			#theme-blue{ background-color: blue; }
+			#theme-yellow{ background-color: yellow; }
+		</style>
+		<div class="theme-options">
+			<div id="theme-orange" onclick="switchColorTheme(this.id)"></div>
+			<div id="theme-black" onclick="switchColorTheme(this.id)"></div>
+			<div id="theme-white" onclick="switchColorTheme(this.id)"></div>
+			<div id="theme-blue" onclick="switchColorTheme(this.id)"></div>
+			<div id="theme-yellow" onclick="switchColorTheme(this.id)"></div>
+		</div>
+		<div class="open" onclick="open_theme_maneger()">></div>
 	</div>
+
 	<script>
+		function open_theme_maneger() {
+			var state = document.querySelector('.theme-maneger').style.right;
+			if(state=== "0"){state="-200px"}
+			else if(state=== "-200px"){state="0"}
+			console.log(state);
+		}
+
 		checkTheme();
 
 		function checkTheme(){

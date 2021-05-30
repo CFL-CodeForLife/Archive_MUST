@@ -3,7 +3,22 @@
 
   --color3: #2873cf;
 }
-    .min-header {
+header i.fa.fa-moon-o{
+  font-size: 26px;
+}
+.theme-darkmode header i.fa.fa-moon-o{ 
+  color: #fff;
+}
+.theme-lightmode header i.fa.fa-moon-o{
+  color: #000;
+}
+header .fa {
+  /* color: #e94560; */
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+.min-header {
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -49,7 +64,7 @@ nav img {
 .nav-links ul li:hover::after {
   width: 100%;
 }
-nav .fa {
+nav i.fa.fa-bars, nav i.fa.fa-times {
   display: none;
 }
 
@@ -70,7 +85,7 @@ nav .fa {
     z-index: 2;
     transition: 0.7s;
   }
-  nav .fa {
+  nav i.fa.fa-bars, nav i.fa.fa-times {
     display: block;
     color: #fff;
     margin: 10px;
@@ -105,15 +120,38 @@ nav .fa {
         <li><a href="../useful-links/index.html">Useful Links</a></li>
       </ul>
     </div>
+    <i class="fa fa-moon-o" id="theme-darkmode" onclick="switchColorTheme(this.id)"></i>
     <i class="fa fa-bars" onclick="showMenu()"></i>
   </nav>
   <!-- <h1>Our Courses</h1> -->
 </section>
 <script>
-  function showMenu() {
-    document.getElementById("navLinks").style.right = "0";
-  }
-  function hideMenu() {
-    document.getElementById("navLinks").style.right = "-200px";
+  function showMenu() { document.getElementById("navLinks").style.right = "0";}
+  function hideMenu() { document.getElementById("navLinks").style.right = "-200px";}
+
+  // checkTheme();
+  
+  // function checkTheme(){
+  //   const currentThemeColor = localStorage.getItem('darkmode') || 'true';
+  //   if(currentThemeColor !== null){
+  //     document.querySelector('body').classList.add(currentThemeColor);
+  //     document.querySelector(`#${currentThemeColor}`).classList.add('active');
+  //   }
+  // }
+
+  function switchColorTheme(theme){
+    if(document.querySelector('#theme-darkmode').classList.contains('active')){
+      document.querySelector('body').classList.remove('theme-darkmode');
+      document.querySelector('body').classList.add('theme-lightmode');
+      document.querySelector('#theme-darkmode').classList.remove('active');
+      localStorage.setItem('darkmode','false');
+    }else{
+      document.querySelector('body').classList.add('theme-darkmode');
+      document.querySelector('body').classList.remove('theme-lightmode');
+      document.querySelector('#theme-darkmode').classList.add('active');
+      // document.querySelector('')
+      localStorage.setItem('darkmode','true');
+    }
+    
   }
 </script>
