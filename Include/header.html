@@ -1,7 +1,6 @@
 <style>
-    :root {
-
-  --color3: #2873cf;
+:root {
+  --nav_link_under_line: #2873cf;
 }
 header i.fa.fa-moon-o{
   font-size: 26px;
@@ -56,7 +55,7 @@ nav img {
   content: "";
   width: 0%;
   height: 2px;
-  background: var(--color3);
+  background: var(--nav_link_under_line);
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -67,8 +66,12 @@ nav img {
 nav i.fa.fa-bars, nav i.fa.fa-times {
   display: none;
 }
-
-
+.theme-darkmode header h1, .theme-darkmode header p, .theme-darkmode header h3, .theme-darkmode header a{
+  color: #fff !important;
+}
+.theme-lightmode header h1, .theme-lightmode header p, .theme-lightmode header h3, .theme-lightmode header a{
+  color: #000 !important;
+}
 @media (max-width: 750px) {
 
   .nav-links ul li {
@@ -120,7 +123,7 @@ nav i.fa.fa-bars, nav i.fa.fa-times {
         <li><a href="../useful-links/index.html">Useful Links</a></li>
       </ul>
     </div>
-    <i class="fa fa-moon-o" id="theme-darkmode" onclick="switchColorTheme(this.id)"></i>
+    <i class="fa fa-moon-o" id="theme-darkmode" onclick="switchColorTheme()"></i>
     <i class="fa fa-bars" onclick="showMenu()"></i>
   </nav>
   <!-- <h1>Our Courses</h1> -->
@@ -138,8 +141,8 @@ nav i.fa.fa-bars, nav i.fa.fa-times {
   //     document.querySelector(`#${currentThemeColor}`).classList.add('active');
   //   }
   // }
-
-  function switchColorTheme(theme){
+  switchColorTheme();
+  function switchColorTheme(){
     if(document.querySelector('#theme-darkmode').classList.contains('active')){
       document.querySelector('body').classList.remove('theme-darkmode');
       document.querySelector('body').classList.add('theme-lightmode');

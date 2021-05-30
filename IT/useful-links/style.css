@@ -6,25 +6,35 @@
   --cards: #16213e;
   --text: #2873cf;
 }
-body.theme-yellow{
+/* body.theme-yellow{
   --background: #f1ff26;
   --cards: #da0000;
   --text: #05b905;
-}
-body.theme-orange{
+} */
+/* body.theme-orange{
   --background: #31220b;
   --cards: #f0860e;
   --text: #f7f7f7;
-}
-body.theme-white{
+} */
+/* body.theme-white{
   --background: #ddd;
   --cards: #636363;
   --text: #000;
-}
-body.theme-black{
+} */
+/* body.theme-black{
   --background: #000;
   --cards: #636363;
   --text: #ddd;
+} */
+body.theme-lightmode{
+  --background: #fff;
+  --cards: #636363;
+  --text: #000;
+}
+body.theme-darkmode{
+  --background: #000;
+  --cards: #636363;
+  --text: #fff;
 }
 * {
   margin: 0;
