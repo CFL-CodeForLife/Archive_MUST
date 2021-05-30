@@ -93,7 +93,7 @@ p {
 }
 .hero-btn:hover {
   border: 1px solid var(--cards);
-  background:var(--text);
+  background: #fff;
   transition: 0.3s;
 }
 .hero-btn .fa {
