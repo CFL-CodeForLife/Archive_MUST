@@ -134,14 +134,14 @@ nav i.fa.fa-bars, nav i.fa.fa-times {
 
   // checkTheme();
   
-  // function checkTheme(){
-  //   const currentThemeColor = localStorage.getItem('darkmode') || 'true';
-  //   if(currentThemeColor !== null){
-  //     document.querySelector('body').classList.add(currentThemeColor);
-  //     document.querySelector(`#${currentThemeColor}`).classList.add('active');
-  //   }
-  // }
-  // switchColorTheme();
+  (()=>{
+    const currentThemeColor = localStorage.getItem('darkmode') || 'true';
+    if(currentThemeColor !== null){
+      document.querySelector('body').classList.add(currentThemeColor);
+      document.querySelector(`#${currentThemeColor}`).classList.add('active');
+    }
+  })();
+
   function switchColorTheme(){
     if(document.querySelector('#theme-darkmode').classList.contains('active')){
       document.querySelector('body').classList.remove('theme-darkmode');
