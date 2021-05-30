@@ -18,12 +18,12 @@
 } */
 body.theme-lightmode{
   --background: #fff;
-  --cards: #444;
+  --cards: #cee;
   --text: #000;
 }
 body.theme-darkmode{
   --background: #000;
-  --cards: #cee;
+  --cards: #444;
   --text: #fff;
 }
 * {
