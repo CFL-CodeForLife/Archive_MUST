@@ -79,7 +79,7 @@ nav i.fa.fa-bars, nav i.fa.fa-times {
   }
   .nav-links {
     position: fixed;
-    background: #000000;
+    background: var(--background); /*#000000;*/
     height: 100vh;
     width: 200px;
     top: 0;
@@ -87,10 +87,11 @@ nav i.fa.fa-bars, nav i.fa.fa-times {
     text-align: left;
     z-index: 2;
     transition: 0.7s;
+    color: var(--text);
   }
   nav i.fa.fa-bars, nav i.fa.fa-times {
     display: block;
-    color: #fff;
+    color: var(--text);
     margin: 10px;
     font-size: 24px;
     cursor: pointer;
