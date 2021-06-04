@@ -1,36 +1,310 @@
 {
-    "general":{
-        "links":[]
+    "general": {
+        "links": []
     },
-
     "links": [
-        { "code": "ENG099", "hidden":true, "url": [ {"platform": "whatsapp", "name": "" , "url": ""}, {"platform": "facebook", "name": "" , "url": ""} ] },
-        { "code": "ENG101", "hidden":true, "url": [ {"platform": "whatsapp", "name": "" , "url": ""}, {"platform": "facebook", "name": "" , "url": ""} ] },
-        { "code": "ENG102", "hidden":true, "url": [ {"platform": "whatsapp", "name": "" , "url": ""}, {"platform": "facebook", "name": "" , "url": ""} ] },
-        { "code": "ENG201", "url": [ {"platform": "whatsapp", "name": "" , "url": "https://chat.whatsapp.com/BsnLttlHDVUDW3EFFAU7BR"}, {"platform": "facebook", "name": "" , "url": ""} ] },
-
-        { "code": "ICDL", "url": [ {"platform": "whatsapp", "name": "" , "url": "https://chat.whatsapp.com/KOiLwWkmr8AKUIjW9wLfvC"}, {"platform": "facebook", "name": "" , "url": ""} ] },
-
-        { "code": "PHY101", "url": [ {"platform": "whatsapp", "name": "" , "url": "https://chat.whatsapp.com/JLTYew6i6knBk3s98D0O8w"}, {"platform": "facebook", "name": "" , "url": ""} ] },
-        { "code": "PHY102", "hidden":true, "url": [ {"platform": "whatsapp", "name": "" , "url": ""}, {"platform": "facebook", "name": "" , "url": ""} ] },
-
-        { "code": "ECE202", "url": [ {"platform": "whatsapp", "name": "" , "url": "https://chat.whatsapp.com/C518Z0QPWL2LuEkcVnCAg5"}, {"platform": "facebook", "name": "" , "url": ""} ] },
-        { "code": "ECE210", "url": [ {"platform": "whatsapp", "name": "" , "url": "https://chat.whatsapp.com/CttG0TzF8FL4nZZF56WmPv"}, {"platform": "facebook", "name": "" , "url": ""} ] },
-
-        { "code": "MATH101", "url": [ {"platform": "whatsapp", "name": "" , "url": ""}, {"platform": "facebook", "name": "" , "url": ""} ]  },
-        { "code": "MATH102", "url": [ {"platform": "whatsapp", "name": "" , "url": "https://chat.whatsapp.com/Khmek6f7ydHGKvVK0gO8Ty"}, {"platform": "facebook", "name": "" , "url": ""} ] },
-        { "code": "MATH251", "url": [ {"platform": "whatsapp", "name": "" , "url": "https://chat.whatsapp.com/IMj1LLE7yN0Kwi0VYzwC0l"}, {"platform": "whatsapp", "name": "", "note":"#2", "url": "https://chat.whatsapp.com/DegrhEPyFhiH1Zc0VhjJZ6"}, {"platform": "facebook", "name": "" , "url": ""} ] },
-        { "code": "MATH241", "url": [ {"platform": "whatsapp", "name": "" , "url": ""}, {"platform": "facebook", "name": "" , "url": ""} ] },
-        { "code": "MATH301", "url": [ {"platform": "whatsapp", "name": "" , "url": "https://chat.whatsapp.com/FvEBVNH5dPOBOi1VhcH1dp"}, {"platform": "facebook", "name": "" , "url": "https://www.facebook.com/groups/163120002405247"} ] },
-
-
-        { "code": "CS102", "url": [ {"platform": "whatsapp", "name": "" , "url": ""}, {"platform": "facebook", "name": "" , "url": ""} ]   },
-        { "code": "CS-212", "url": [ {"platform": "whatsapp", "name": "" , "url": "https://chat.whatsapp.com/KfuorNBuw15HojO9IbeFQG"}, {"platform": "whatsapp", "name": "" ,"note":"2", "url": ""}, {"platform": "facebook", "name": "" , "url": ""} ] },
-        { "code": "CS-251", "url": [ {"platform": "whatsapp", "name": "" , "url": "https://chat.whatsapp.com/JZX1bhtzfWhICTL5x9GKyD"}, {"platform": "facebook", "name": "" , "url": ""} ] },
-        { "code": "CS352","name":"?" ,"url": [ {"platform": "whatsapp", "name": "" ,"note":"", "url": "https://chat.whatsapp.com/LLKphdABMBeDHFzkZmJJO3"}, {"platform": "facebook", "name": "" , "url": ""} ] },
-
-
-        { "code": "IS231", "url": [ {"platform": "whatsapp", "name": "" , "url": "https://chat.whatsapp.com/KV0YoVNh9xxCMtfTAx7Ikg"}, {"platform": "facebook", "name": "" , "url": ""} ]  }
-  ]
+        {
+            "code": "ENG099",
+            "hidden": true,
+            "url": [
+                {
+                    "platform": "whatsapp",
+                    "name": "",
+                    "url": ""
+                },
+                {
+                    "platform": "facebook",
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "code": "ENG101",
+            "hidden": true,
+            "url": [
+                {
+                    "platform": "whatsapp",
+                    "name": "",
+                    "url": ""
+                },
+                {
+                    "platform": "facebook",
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "code": "ENG102",
+            "hidden": true,
+            "url": [
+                {
+                    "platform": "whatsapp",
+                    "name": "",
+                    "url": ""
+                },
+                {
+                    "platform": "facebook",
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "code": "ENG201",
+            "url": [
+                {
+                    "platform": "whatsapp",
+                    "name": "",
+                    "url": "https://chat.whatsapp.com/BsnLttlHDVUDW3EFFAU7BR"
+                },
+                {
+                    "platform": "facebook",
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "code": "ICDL",
+            "url": [
+                {
+                    "platform": "whatsapp",
+                    "name": "",
+                    "url": "https://chat.whatsapp.com/KOiLwWkmr8AKUIjW9wLfvC"
+                },
+                {
+                    "platform": "facebook",
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "code": "PHY101",
+            "url": [
+                {
+                    "platform": "whatsapp",
+                    "name": "",
+                    "url": "https://chat.whatsapp.com/JLTYew6i6knBk3s98D0O8w"
+                },
+                {
+                    "platform": "facebook",
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "code": "PHY102",
+            "hidden": true,
+            "url": [
+                {
+                    "platform": "whatsapp",
+                    "name": "",
+                    "url": ""
+                },
+                {
+                    "platform": "facebook",
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "code": "ECE202",
+            "url": [
+                {
+                    "platform": "whatsapp",
+                    "name": "",
+                    "url": "https://chat.whatsapp.com/C518Z0QPWL2LuEkcVnCAg5"
+                },
+                {
+                    "platform": "facebook",
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "code": "ECE210",
+            "url": [
+                {
+                    "platform": "whatsapp",
+                    "name": "",
+                    "url": "https://chat.whatsapp.com/CttG0TzF8FL4nZZF56WmPv"
+                },
+                {
+                    "platform": "facebook",
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "code": "MATH101",
+            "url": [
+                {
+                    "platform": "whatsapp",
+                    "name": "",
+                    "url": ""
+                },
+                {
+                    "platform": "facebook",
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "code": "MATH102",
+            "url": [
+                {
+                    "platform": "whatsapp",
+                    "name": "",
+                    "url": "https://chat.whatsapp.com/Khmek6f7ydHGKvVK0gO8Ty"
+                },
+                {
+                    "platform": "facebook",
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "code": "MATH251",
+            "url": [
+                {
+                    "platform": "whatsapp",
+                    "name": "",
+                    "url": "https://chat.whatsapp.com/IMj1LLE7yN0Kwi0VYzwC0l"
+                },
+                {
+                    "platform": "whatsapp",
+                    "name": "",
+                    "note": "#2",
+                    "url": "https://chat.whatsapp.com/DegrhEPyFhiH1Zc0VhjJZ6"
+                },
+                {
+                    "platform": "facebook",
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "code": "MATH241",
+            "url": [
+                {
+                    "platform": "whatsapp",
+                    "name": "",
+                    "url": ""
+                },
+                {
+                    "platform": "facebook",
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "code": "MATH301",
+            "url": [
+                {
+                    "platform": "whatsapp",
+                    "name": "",
+                    "url": "https://chat.whatsapp.com/FvEBVNH5dPOBOi1VhcH1dp"
+                },
+                {
+                    "platform": "facebook",
+                    "name": "",
+                    "url": "https://www.facebook.com/groups/163120002405247"
+                }
+            ]
+        },
+        {
+            "code": "CS102",
+            "url": [
+                {
+                    "platform": "whatsapp",
+                    "name": "",
+                    "url": ""
+                },
+                {
+                    "platform": "facebook",
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "code": "CS-212",
+            "url": [
+                {
+                    "platform": "whatsapp",
+                    "name": "",
+                    "url": "https://chat.whatsapp.com/KfuorNBuw15HojO9IbeFQG"
+                },
+                {
+                    "platform": "whatsapp",
+                    "name": "",
+                    "note": "2",
+                    "url": ""
+                },
+                {
+                    "platform": "facebook",
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "code": "CS-251",
+            "url": [
+                {
+                    "platform": "whatsapp",
+                    "name": "",
+                    "url": "https://chat.whatsapp.com/JZX1bhtzfWhICTL5x9GKyD"
+                },
+                {
+                    "platform": "facebook",
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "code": "CS352",
+            "name": "?",
+            "url": [
+                {
+                    "platform": "whatsapp",
+                    "name": "",
+                    "note": "",
+                    "url": "https://chat.whatsapp.com/LLKphdABMBeDHFzkZmJJO3"
+                },
+                {
+                    "platform": "facebook",
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "code": "IS231",
+            "url": [
+                {
+                    "platform": "whatsapp",
+                    "name": "",
+                    "url": "https://chat.whatsapp.com/KV0YoVNh9xxCMtfTAx7Ikg"
+                },
+                {
+                    "platform": "facebook",
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        }
+    ]
 }
-
