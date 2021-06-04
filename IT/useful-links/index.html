@@ -23,21 +23,21 @@
 	<footer></footer>
 	<script>
 		function _isEmpty(e) {	return !(e == undefined || e == null || e == ""); }
-		(async () => {
-		const res = await ( await fetch( `${window.location.protocol}//${window.location.host}/MUST/api/MUST/IT/links.json`) ).json();
+		(async()=>{
+		const res = await(await fetch(`${window.location.protocol}//${window.location.host}/MUST/api/MUST/IT/links.json`)).json();
 			res.links.forEach((e) => {
 				if (e.hidden) return;
 				document.querySelector("#links-container").innerHTML += 
 					`<a href="${e.url.type == "local" ? e.url.link : e.url.link}" ${ e.url.type == "local" ? "" : 'target="_blank"' }>	
-					<div class="link-col"> <img src="${ !_isEmpty(e.img) ? "../../image/library.png" : e.img}" alt=""><div class="data">
+					<div class="link-col"> <img src="${ !_isEmpty(e.img) ? "../../image/library.png":e.img}" alt=""><div class="data">
 							<h3>${!_isEmpty(e.name) ? "No Name" : e.name}</h3> 
-							<p> ${	!_isEmpty(e.description)	? "No Description"	: e.description }</p>	
+							<p> ${ !_isEmpty(e.description)?"No Description":e.description}</p>	
 						</div>
 					</div></a>`;
 			});
 		})();
 		(async () => {
-		const res = await ( await fetch(`https://api.adviceslip.com/advice`)	).json();
+		const res = await ( await fetch(`https://api.adviceslip.com/advice`)).json();
 		// console.log(res);
 		document.querySelector(".advice").innerHTML = res.slip.advice;
 		})();
