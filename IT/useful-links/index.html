@@ -20,11 +20,25 @@
 	</section>
 
 
-	<footer></footer>
+	<footer>
+
+	</footer>
 	<script>
 		function _isEmpty(e) {	return !(e == undefined || e == null || e == ""); }
-		(async()=>{
-		const res = await(await fetch(`${window.location.protocol}//${window.location.host}/MUST/api/MUST/IT/links.json`)).json();
+
+		const get_data = async (URL, options = { DIR: ''}) => {
+			// protocol	//	host				/	DIR
+			// https:	//	cfl.ahmedkira.com	/  MUST  /
+			var API_HOST = `${window.location.protocol}//${window.location.host}`;
+			if (options.DIR.length>0) API_HOST += `/${options.DIR}`;
+			const res = await (await fetch(`${API_HOST}${URL}`)).json();
+			return res;
+		}
+
+		(async()=>{ // add data
+		const res = await get_data(`/api/MUST/IT/links.json`,{DIR: 'MUST'}); 
+		// const res = await get_data(`/api/MUST/IT/links.json`); // for testing
+		// console.log(res);
 			res.links.forEach((e) => {
 				if (e.hidden) return;
 				document.querySelector("#links-container").innerHTML += 

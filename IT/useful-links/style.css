@@ -28,12 +28,12 @@
 } */
 body.theme-lightmode{
   --background: #fff;
-  --cards: #636363;
+  --cards: #cee;
   --text: #000;
 }
 body.theme-darkmode{
   --background: #000;
-  --cards: #636363;
+  --cards: #444;
   --text: #fff;
 }
 * {
@@ -189,14 +189,19 @@ a {
   border-radius: 10px;
   margin-bottom: 10px;
   text-align: left;
-  height: 160px;
+  height: 150px;
 }
 
 .link-col img {
+  /* background-color: var(--background); */
+  background-color: #fff;
   display: flex;
-  width: 40%;
-  height: 100%;
+  width: 150px;
+  height: 150px;
   border-radius: 10px 0 0 10px;
+  /* border: 1px solid rgb(193, 248, 255); */
+  /* padding: 10px; */
+  /* margin: 10px; */
 }
 .link-col .data {
   padding: 15px;
