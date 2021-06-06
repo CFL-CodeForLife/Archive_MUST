@@ -11,6 +11,24 @@
             "description":"Links for whatsapp and facebook"
         },
         {
+            "name":"must grades",
+            "url":{
+                "type":"full",
+                "link":"https://grades.must.edu.eg/"
+            }, 
+            "img":"https://www.must.edu.eg/app/uploads/2020/08/541909-QeXW4-1587210029-5e9ae72d7167e.png",
+            "description":"This is a Official Link from MUST"
+        },
+        {
+            "name":"must",
+            "url":{
+                "type":"full",
+                "link":"https://must.edu.eg/"
+            }, 
+            "img":"https://www.must.edu.eg/app/uploads/2020/08/541909-QeXW4-1587210029-5e9ae72d7167e.png",
+            "description":"This is a Official Link from MUST"
+        },
+        {
             "name":"Google Drive",
             "url":{
                 "type":"full",
