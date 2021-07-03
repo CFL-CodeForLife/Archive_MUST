@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100;300;400;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+:root {
+  --background: #fff;
+  --cards: #cee;
+  --text: #000;
+}
+/* :root {
+  --background: #1a1a2e;
+  --cards: #16213e;
+  --text: #2873cf;
+} */
+/* body.theme-orange{
+  --background: #31220b;
+  --cards: #f0860e;
+  --text: #f7f7f7;
+} */
+body.theme-lightmode{
+  --background: #fff;
+  --cards: #cee;
+  --text: #000;
+}
+body.theme-darkmode{
+  --background: #000;
+  --cards: #444;
+  --text: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Antonio", sans-serif;
+}
+body {
+  background-color: var(--background);
+}
+h1 {
+  color: var(--text);
+  font-size: 40px;
+  font-weight: 600;
+}
+h3 {
+  color: var(--text);
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+p {
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 10px;
+}
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.my-section {
+  min-height: 100vh;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.hero-btn {
+  /* display: inline-block; */
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 13px 34px;
+  font-size: 16px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 2px 12px;
+}
+.hero-btn:hover {
+  border: 1px solid var(--cards);
+  background: var(--background);
+  transition: 0.3s;
+}
+.hero-btn .fa {
+  margin: 0 4px;
+}
+.gray-btn {
+  border: 2px solid white;
+  /* background: transparent; */
+  color: #3c415c;
+}
+.gray-btn:hover {
+  color: #fff;
+}
+
+
+
+/* course section */
+.courses {
+  padding-top: 10px;
+  color: var(--text);
+}
+.course-container{
+  width: 100%;
+  display: flex;
+  padding: 15px;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+
+
+}
+ .course-data {
+  /* width: 100px; */
+   display: block;
+  /* flex-basis: 62%; */
+  text-align: center;
+  width: 100%;
+  background: var(--cards);
+  border-radius: 10px;
+  /* margin-bottom: 5%; */
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+.course-info{
+  /* width: 100px; */
+  display: block;
+
+  /* width: 15%; */
+}
+
+.courses .course-col xx {
+  /* flex-basis: 31%; */
+  background: var(--cards);
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.course-col:hover xx{
+  box-shadow: 0 0 20px 0px var(--text);
+}
+.courses h1 {
+  margin: 10px;
+}
+.courses p {
+  margin: 10px;
+}
+
+/* other section */
+.other {
+  padding-top: 120px;
+}
+.other-col {
+  /* flex-basis: 32%; */
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.other-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+.other-col p {
+  padding: 0;
+}
+
+.other-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* footer */
+
+
+
+.about-us {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.about-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+.about-col img {
+  width: 100%;
+}
+.about-col h1 {
+  padding-top: 0;
+}
+.about-col p {
+  padding: 15px 0 25px;
+}
+
+#group-container a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#group-container .one-course {
+  color: #717171;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 15px;
+}
+
+#group-container .one-course .one-link {
+  /* border: ; */
+  color: #717171;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 10px;
+}
+/* .cfl-logo {
+  border-radius: 50%;
+} */
+/* @media (max-width: 1200px) {
+  .container-3 {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-gap: 30px;
+    padding: 15px;
+  }
+} */
+
+/* @media (max-width: 750px) {
+  p{
+    font-size: 13px;
+  }
+  h1{
+    font-size: 28px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .container-2,  .container-3 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .text-box h1 {
+    font-size: 24px;
+  }
+
+  .testimonials-col img {
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+  .cta h1 {
+    font-size: 24px;
+  }
+  .msg-form button {
+    margin: 10px 0;
+  }
+
+} */
+

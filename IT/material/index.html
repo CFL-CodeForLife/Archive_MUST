@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>material</title>
+</head>
+<body>
+    
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        (async()=>{
+            const file_id=urlParams.get('file_no');
+            // const file_id=urlParams.get('file_id');
+            const res = await(await fetch(`https://must-server.herokuapp.com/api/file/${file_id}`)).json();
+            // console.log(res);
+            location = res.data.urls[0];
+        })();
+
+    </script>
+</body>
+</html>
