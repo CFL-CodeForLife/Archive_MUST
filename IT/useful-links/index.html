@@ -29,14 +29,14 @@
 		const get_data = async (URL, options = { DIR: ''}) => {
 			// protocol	//	host				/	DIR
 			// https:	//	cfl.ahmedkira.com	/  MUST  /
-			var API_HOST = `${window.location.protocol}//${window.location.host}`;
+			var API_HOST = `${window.location.protocol}//must-server.herokuapp.com`;
 			if (options.DIR.length>0) API_HOST += `/${options.DIR}`;
 			const res = await (await fetch(`${API_HOST}${URL}`)).json();
 			return res;
 		}
 
 		(async()=>{ // add data
-		const res = await get_data(`/api/MUST/IT/links.json`,{DIR: 'MUST'}); 
+		const res = await get_data(`/api/MUST/IT/links.json`); 
 		// const res = await get_data(`/api/MUST/IT/links.json`); // for testing
 		// console.log(res);
 			res.links.forEach((e) => {

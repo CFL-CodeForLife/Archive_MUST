@@ -2,9 +2,9 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 :root {
-  --background: #1a1a2e;
-  --cards: #16213e;
-  --text: #2873cf;
+  --background: #fff;
+  --cards: #cee;
+  --text: #000;
 }
 /* body.theme-yellow{
   --background: #f1ff26;
