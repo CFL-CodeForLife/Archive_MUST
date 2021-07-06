@@ -2,13 +2,13 @@ function showMenu() { document.querySelector("header #navLinks").style.right = "
 function hideMenu() { document.querySelector("header #navLinks").style.right = "-200px";}
 
 // checkTheme();
-
+var bodyDOM = document.querySelector('body');
 (()=>{ // checkTheme
 // console.log(localStorage.getItem('darkmode'));
 const currentThemeColor = (localStorage.getItem('darkmode')=='true')?'theme-darkmode':'theme-lightmode' ;
 // console.log(currentThemeColor);
 if(currentThemeColor !== null){
-    document.querySelector('body').classList.add(currentThemeColor);
+    bodyDOM.classList.add(currentThemeColor);
     if (currentThemeColor==='theme-darkmode')
         document.querySelector(`#theme-darkmode`).classList.add('active');
 }
@@ -17,13 +17,13 @@ if(currentThemeColor !== null){
 function switchColorTheme(){
 
 if(document.querySelector('#theme-darkmode').classList.contains('active')){
-    document.querySelector('body').classList.remove('theme-darkmode');
-    document.querySelector('body').classList.add('theme-lightmode');
+    bodyDOM.classList.remove('theme-darkmode');
+    bodyDOM.classList.add('theme-lightmode');
     document.querySelector('#theme-darkmode').classList.remove('active');
     localStorage.setItem('darkmode','false');
 }else{
-    document.querySelector('body').classList.add('theme-darkmode');
-    document.querySelector('body').classList.remove('theme-lightmode');
+    bodyDOM.classList.add('theme-darkmode');
+    bodyDOM.classList.remove('theme-lightmode');
     document.querySelector('#theme-darkmode').classList.add('active');
     // document.querySelector('')
     localStorage.setItem('darkmode','true');
