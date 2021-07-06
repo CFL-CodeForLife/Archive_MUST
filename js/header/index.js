@@ -9,7 +9,8 @@ const currentThemeColor = (localStorage.getItem('darkmode')=='true')?'theme-dark
 // console.log(currentThemeColor);
 if(currentThemeColor !== null){
     document.querySelector('body').classList.add(currentThemeColor);
-    document.querySelector(`#theme-darkmode`).classList.add('active');
+    if (currentThemeColor==='theme-darkmode')
+        document.querySelector(`#theme-darkmode`).classList.add('active');
 }
 })();
 
