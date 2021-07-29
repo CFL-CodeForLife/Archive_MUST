@@ -11,8 +11,8 @@ const get_data = async (URL, options = { DIR: ''}) => {
 }
 
 (async () => { // add data
-    const res = await get_data(`/api/MUST/IT/courses-group.json`,{DIR: 'MUST'}); 
-    // const res = await get_data(`/api/MUST/IT/courses-group.json`); // for testing
+    // const res = await get_data(`/api/MUST/IT/courses-group.json`,{DIR: 'MUST'}); 
+    const res = await (await fetch(`courses-group.json`)).json();
     console.log(res);
     res.links.forEach((e) => {
         if (e.hidden === true) return;
