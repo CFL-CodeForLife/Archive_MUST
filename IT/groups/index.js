@@ -4,15 +4,15 @@ function _isEmpty(e) { return !(e == undefined || e == null || e == ''); }
  * @returns {object}
  */
 const get_data = async (URL, options = { DIR: ''}) => {
-    var API_HOST = `${window.location.protocol}//must-server.herokuapp.com`;
+    var API_HOST = `${window.location.protocol}//cfl.ahmedkira.com/`;
     // if (options.DIR.length>0) API_HOST += `/${options.DIR}`;
     const res = await (await fetch(`${API_HOST}${URL}`)).json();
     return res;
 }
 
 (async () => { // add data
-    // const res = await get_data(`/api/MUST/IT/courses-group.json`,{DIR: 'MUST'}); 
-    const res = await get_data(`/api/MUST/IT/courses-group.json`); // for testing
+    const res = await get_data(`/api/MUST/IT/courses-group.json`,{DIR: 'MUST'}); 
+    // const res = await get_data(`/api/MUST/IT/courses-group.json`); // for testing
     console.log(res);
     res.links.forEach((e) => {
         if (e.hidden === true) return;

@@ -29,7 +29,7 @@
 		const get_data = async (URL, options = { DIR: ''}) => {
 			// protocol	//	host				/	DIR
 			// https:	//	cfl.ahmedkira.com	/  MUST  /
-			var API_HOST = `${window.location.protocol}//must-server.herokuapp.com`;
+			var API_HOST = `${window.location.protocol}//cfl.ahmedkira.com/MUST/`;
 			if (options.DIR.length>0) API_HOST += `/${options.DIR}`;
 			const res = await (await fetch(`${API_HOST}${URL}`)).json();
 			return res;
