@@ -36,7 +36,7 @@
 		}
 
 		(async()=>{ // add data
-		const res = await get_data(`/api/MUST/IT/links.json`); 
+		const res = await (await fetch(`links.json`)).json();
 		// const res = await get_data(`/api/MUST/IT/links.json`); // for testing
 		// console.log(res);
 			res.links.forEach((e) => {
